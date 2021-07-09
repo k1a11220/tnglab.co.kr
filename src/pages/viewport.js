@@ -5,7 +5,9 @@ import ProductLayout from "../layout/productLayout"
 const ViewportPage = () => {
   return (
     <Layout>
-      <h1>Viewport Page</h1>
+      <ProductLayout>
+        <h1>Viewport Page</h1>
+      </ProductLayout>
     </Layout>
   )
 }

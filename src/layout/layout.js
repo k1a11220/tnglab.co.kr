@@ -13,9 +13,11 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <NavBar />
-      <Container>{children}</Container>
-      <Footer />
+      <main>
+        <NavBar />
+        <Container>{children}</Container>
+        <Footer />
+      </main>
     </React.Fragment>
   )
 }

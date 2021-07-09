@@ -8,7 +8,6 @@ const Navbar = styled.nav`
   position: sticky;
   top: 0;
   z-index: 50;
-  width: 100vw;
   height: 54px;
   border-bottom: 1px solid transparent;
   background-color: #ffffff;
@@ -173,7 +172,7 @@ const Navigation = () => {
                 <Link to="/vacuum">Vacuum Parts</Link>
               </Item>
               <Item>
-                <Link to="/compressor">Compressor</Link>
+                <Link to="/hydro">Hydrogen Compressor</Link>
               </Item>
               <Item>
                 <a href="mailto:sales@tnglab.co.kr">Contact</a>
