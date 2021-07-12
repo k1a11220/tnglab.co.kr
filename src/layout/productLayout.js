@@ -9,12 +9,12 @@ const Container = styled.div`
   height: 100%;
 `
 
-const ProductLayout = ({ children }) => {
+const ProductLayout = ({ children, links }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
       <Container>
-        <ProductNav></ProductNav>
+        <ProductNav links={links}></ProductNav>
         {children}
       </Container>
     </React.Fragment>

@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   @media (max-width: 1400px) {
     width: 92%;
   }
-  @media (max-width: 639px) {
+  @media (max-width: 844px) {
     justify-content: space-between;
   }
 `
@@ -54,10 +54,11 @@ const ItemContainer = styled.div`
   flex: 1;
   overflow-y: hidden;
   max-height: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
   transition: 0.44s 0.2s cubic-bezier(0.52, 0.16, 0.24, 1),
     height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
-  @media (max-width: 639px) {
+  @media (max-width: 844px) {
     width: 100%;
     flex-direction: column;
     position: absolute;
@@ -84,7 +85,7 @@ const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-  @media (max-width: 639px) {
+  @media (max-width: 844px) {
     display: flex;
   }
   &:focus {
@@ -119,23 +120,23 @@ const ItemWrapper = styled.div`
   padding: 0;
   margin: 0;
   background-color: #ffffff;
-  @media (max-width: 639px) {
+  @media (max-width: 844px) {
     flex-direction: column;
   }
 `
 
 const Item = styled.li`
   display: flex;
+  text-align: center;
   align-items: center;
   list-style: none;
-  margin-left: 30px;
-  @media (max-width: 639px) {
+  margin: 0 30px 0 30px;
+  @media (max-width: 844px) {
     width: 92%;
     margin: 18px 0px;
   }
   & a {
     font-size: 16px;
-    padding: 10px;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     color: #1d1d1f;
@@ -143,6 +144,20 @@ const Item = styled.li`
   & a:hover {
     transition: all 0.2s ease-in-out;
     color: #086bce;
+  }
+`
+
+const ContactItem1 = styled(Item)`
+  display: none;
+  @media (max-width: 844px) {
+    display: flex;
+  }
+`
+
+const ContactItem = styled(Item)`
+  margin: 0;
+  @media (max-width: 844px) {
+    display: none;
   }
 `
 
@@ -169,16 +184,19 @@ const Navigation = () => {
                 <Link to="/viewport">Viewport</Link>
               </Item>
               <Item>
-                <Link to="/vacuum">Vacuum Parts</Link>
+                <Link to="/vacuum">Vacuum Component</Link>
               </Item>
               <Item>
                 <Link to="/hydro">Hydrogen Compressor</Link>
               </Item>
-              <Item>
+              <ContactItem1>
                 <a href="mailto:sales@tnglab.co.kr">Contact</a>
-              </Item>
+              </ContactItem1>
             </ItemWrapper>
           </ItemContainer>
+          <ContactItem>
+            <a href="mailto:sales@tnglab.co.kr">Contact</a>
+          </ContactItem>
           <StyledBurger clicked={!clicked} onClick={click}>
             <div />
             <div />

@@ -5,7 +5,7 @@ import ProductNavItem from "./ProductNavItem"
 
 const Container = styled.div`
   height: 120px;
-  background-color: #f2f2f2;
+  background-color: #f5f5f7;
 `
 
 const ItemWrapper = styled.div`
@@ -17,11 +17,13 @@ const ItemWrapper = styled.div`
   align-items: center;
 `
 
-const ProductNav = () => {
+const ProductNav = ({ links }) => {
   return (
     <Container>
       <ItemWrapper>
-        <ProductNavItem></ProductNavItem>
+        {links.map(({ link, name, icon }) => (
+          <ProductNavItem link={link} name={name} icon={icon} />
+        ))}
       </ItemWrapper>
     </Container>
   )
