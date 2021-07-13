@@ -66,7 +66,7 @@ const HeroImg = styled.div`
 `
 
 const AdvantageContainer = styled.div`
-  background-color: #1d1d1f;
+  background-color: #0a0a0a;
   & h1 {
     color: #f5f5f7;
   }
@@ -124,11 +124,7 @@ const AdvantageImgContent = styled.div`
 
 const ProductImgContainer = styled.div`
   background-color: #ffffff;
-  & h1 {
-    padding: 136px 0 24px 0;
-    font-weight: 500;
-    font-size: 48px;
-  }
+  padding-bottom: 60px;
 `
 
 const ProductImgWrapper = styled.div`
@@ -155,6 +151,52 @@ const ProductImgItem = styled.div`
 
 const ProductImgItem__Long = styled(ProductImgItem)`
   grid-area: 1 / 2 span;
+`
+
+const BuyContainer = styled.div`
+  background-color: #f5f5f7;
+  padding-bottom: 60px;
+  & h1 {
+    padding: 136px 0 40px 0;
+    font-weight: 500;
+    font-size: 32px;
+  }
+`
+
+const BuyWrapper = styled.div`
+  width: var(--width);
+  margin: 0 auto;
+`
+
+const BuyContentWrapper = styled.div`
+  width: 100%;
+  height: 240px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  margin-bottom: 40px;
+
+  & h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  & p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  & p:nth-of-type(2) {
+    /* color: #a2a1a1; */
+  }
+
+  & img {
+    padding-right: 80px;
+    height: 140px;
+  }
 `
 
 // markup
@@ -191,7 +233,7 @@ const JKPage = () => {
               thing can do.
             </p>
             <ButtonWrapper>
-              <a>Estimate</a>
+              <a href="mailto:sales@tnglab.co.kr">Estimate</a>
               <a>Catalogue</a>
               <a>3D Step</a>
             </ButtonWrapper>
@@ -246,6 +288,7 @@ const JKPage = () => {
             </AdvantageImg>
           </AdvantageWrapper>
         </AdvantageContainer>
+        <div style={{ backgroundColor: "#1d1d1f", height: "1000px" }}></div>
         <ProductImgContainer>
           <ProductImgWrapper>
             <h1>Feature</h1>
@@ -259,6 +302,41 @@ const JKPage = () => {
             </ProductImgGrid>
           </ProductImgWrapper>
         </ProductImgContainer>
+        <BuyContainer>
+          <BuyWrapper>
+            <h1>More Integral Viewport Series</h1>
+            <BuyContentWrapper>
+              <div>
+                <h3>JK-Series</h3>
+                <p>Circle type Integral Viewport</p>
+                <p>Supports ISO Flange Standard (NW)</p>
+              </div>
+              <div>
+                <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+              </div>
+            </BuyContentWrapper>
+            <BuyContentWrapper>
+              <div>
+                <h3>JKR-Series</h3>
+                <p>Circle type Integral Viewport</p>
+                <p>Supports ISO Flange Standard (NW)</p>
+              </div>
+              <div>
+                <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+              </div>
+            </BuyContentWrapper>
+            <BuyContentWrapper>
+              <div>
+                <h3>NYS-Series</h3>
+                <p>Circle type Integral Viewport</p>
+                <p>Supports ISO Flange Standard (NW)</p>
+              </div>
+              <div>
+                <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+              </div>
+            </BuyContentWrapper>
+          </BuyWrapper>
+        </BuyContainer>
       </ProductLayout>
     </Layout>
   )

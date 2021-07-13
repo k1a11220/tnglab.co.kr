@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html, body, #___gatsby, #gatsby-focus-wrapper {
     min-height: 100%;
 }
