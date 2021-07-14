@@ -18,6 +18,9 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 60px 0 60px 0;
+  @media (max-width: var(--max-width)) {
+    width: var(--mobile-width);
+  }
 `
 
 const LogoWrapper = styled.div`

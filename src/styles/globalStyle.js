@@ -5,10 +5,19 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
 
     --width: 1200px;
-    --max-width: 1200px;
+    --max-width: 1400px;
     --min-width: 320px;
+    --text-width: 700px;
     --nav-height: 54px;
     --footer-height: 60px;
+
+    --font-xs: 16px;
+    --font-sm: 18px;
+    --font-md: 20px;
+    --font-lg: 40px;
+    --font-xl: 64px;
+
+    --page-padding: 136px;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -18,6 +27,21 @@ const GlobalStyle = createGlobalStyle`
 
     --color-black: #0a0a0a;
     --color-white: #ffffff;
+
+    --gap: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+  :root{
+    --width: 92%;
+    --text-width: 92%;
+
+    --font-xs: 14px;
+    --font-sm: 16px;
+    --font-md: 18px;
+    --font-lg: 32px;
+    --font-xl: 52px;
+  }
 }
 
 * {

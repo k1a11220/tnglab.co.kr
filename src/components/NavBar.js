@@ -22,12 +22,11 @@ const Navbar = styled.nav`
 const Container = styled.div`
   width: 100%;
   height: 100%;
-  max-width: var(--max-width);
   margin: auto;
 `
 
 const Wrapper = styled.div`
-  width: 100%;
+  width: var(--width);
   height: 100%;
   display: flex;
   margin: auto;

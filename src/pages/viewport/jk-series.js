@@ -8,16 +8,18 @@ import CHECK from "../../images/greenCheckmark.svg"
 const IntroContainer = styled.div`
   width: var(--width);
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `
 
 const IntroWrapper = styled.div`
   margin: 0 auto;
-  padding: 60px 0 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 700px;
+  margin-bottom: 60px;
+  width: var(--text-width);
 
   & h1 {
     font-size: 20px;
@@ -25,12 +27,12 @@ const IntroWrapper = styled.div`
   }
 
   & h2 {
-    font-size: 64px;
+    font-size: var(--font-xl);
     margin-bottom: 20px;
   }
 
   & p {
-    font-size: 18px;
+    font-size: var(--font-sm);
     font-weight: 500;
   }
 `
@@ -43,8 +45,13 @@ const ButtonWrapper = styled.span`
     border: none;
     border-radius: 20px;
     margin: 12px;
-    font-size: 18px;
+    font-size: var(--font-sm);
     background-color: #f5f5f7;
+    @media screen and (max-width: 1400px) {
+      margin: 8px;
+      font-size: var(--font-md);
+      padding: 16px 24px 16px 24px;
+    }
   }
 
   & a:first-of-type {
@@ -55,6 +62,11 @@ const ButtonWrapper = styled.span`
   & a:hover {
     background-color: ;
   }
+
+  @media screen and (max-width: 1400px) {
+    display: grid;
+    width: 100%;
+  }
 `
 
 const HeroImg = styled.div`
@@ -62,7 +74,9 @@ const HeroImg = styled.div`
   background-size: cover;
   height: 700px;
   border-radius: 15px;
-  margin-bottom: 64px;
+  @media screen and (max-width: 1400px) {
+    height: 50vw;
+  }
 `
 
 const AdvantageContainer = styled.div`
@@ -74,13 +88,18 @@ const AdvantageContainer = styled.div`
 
 const AdvantageWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: var(--width);
+  width: var(--text-width);
   margin: 0 auto;
+  padding-top: var(--page-padding);
+  padding-bottom: var(--page-padding);
   & h1 {
-    padding: 136px 0 24px 0;
+    padding: 0 0 24px 0;
     font-weight: 500;
-    font-size: 48px;
+    font-size: var(--font-lg);
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
   }
 `
 
@@ -88,7 +107,9 @@ const AdvantageGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 80px;
-  padding-bottom: 136px;
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 60px;
+  }
 `
 
 const AdvantageItem = styled.div`
@@ -99,7 +120,7 @@ const AdvantageItem = styled.div`
 
   & p {
     color: #f5f5f7;
-    font-size: 20px;
+    font-size: var(--font-md);
     font-weight: 600;
   }
 
@@ -112,9 +133,14 @@ const AdvantageItem = styled.div`
 
 const AdvantageImg = styled.div`
   display: grid;
-  padding: 136px 0 136px 120px;
+  padding-left: 120px;
   grid-template-columns: 1fr;
-  grid-gap: 120px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: var(--gap);
+  @media screen and (max-width: 1200px) {
+    height: 100vw;
+    padding: 0;
+  }
 `
 
 const AdvantageImgContent = styled.div`
@@ -133,7 +159,7 @@ const ProductImgWrapper = styled.div`
   & h1 {
     padding: 136px 0 56px 0;
     font-weight: 500;
-    font-size: 48px;
+    font-size: var(--font-lg);
   }
 `
 
@@ -141,7 +167,14 @@ const ProductImgGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 400px;
-  grid-gap: 32px;
+  grid-gap: var(--gap);
+  @media screen and (max-width: 1200px) {
+    grid-auto-rows: 30vw;
+  }
+  @media screen and (max-width: 769px) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 56vw;
+  }
 `
 
 const ProductImgItem = styled.div`
@@ -159,7 +192,7 @@ const BuyContainer = styled.div`
   & h1 {
     padding: 136px 0 40px 0;
     font-weight: 500;
-    font-size: 32px;
+    font-size: var(--font-lg);
   }
 `
 
@@ -169,7 +202,6 @@ const BuyWrapper = styled.div`
 `
 
 const BuyContentWrapper = styled.div`
-  width: 100%;
   height: 240px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -177,15 +209,16 @@ const BuyContentWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-left: 80px;
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: var(--gap);
 
   & h3 {
-    font-size: 32px;
+    font-size: var(--font-lg);
     margin-bottom: 24px;
   }
 
   & p {
-    font-size: 18px;
+    font-size: var(--font-xs);
     font-weight: 500;
   }
 
@@ -283,9 +316,6 @@ const JKPage = () => {
                 </AdvantageItem>
               </AdvantageGrid>
             </div>
-            <AdvantageImg>
-              <AdvantageImgContent></AdvantageImgContent>
-            </AdvantageImg>
           </AdvantageWrapper>
         </AdvantageContainer>
         <div style={{ backgroundColor: "#1d1d1f", height: "1000px" }}></div>

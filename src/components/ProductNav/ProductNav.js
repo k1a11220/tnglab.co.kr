@@ -15,6 +15,9 @@ const ItemWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1400px) {
+    width: 92%;
+  }
 `
 
 const ProductNav = ({ links }) => {
