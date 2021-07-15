@@ -13,9 +13,11 @@ const GlobalStyle = createGlobalStyle`
 
     --font-xs: 16px;
     --font-sm: 18px;
-    --font-md: 20px;
+    --font-md: 22px;
     --font-lg: 40px;
     --font-xl: 64px;
+
+    --icon-xl: 100px;
 
     --page-padding: 136px;
 
