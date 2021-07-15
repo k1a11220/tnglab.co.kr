@@ -13,14 +13,23 @@ const Container = styled.div`
   height: calc(100vh - 54px);
   background: url(${(props) => props.imgPath});
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   & h1 {
-    font-size: 44px;
-    margin-top: 80px;
+    font-size: var(--font-lg);
+    margin-top: 6vw;
     text-align: center;
+    font-weight: 500;
   }
+
   & img {
     margin-bottom: 40px;
+  }
+
+  & black {
+    font-weight: 700;
+    transition: all 0.2 ease-in-out;
   }
 `
 
@@ -29,10 +38,21 @@ const Icon = styled.img`
 `
 // markup
 const IndexPage = () => {
+  const TITLE = ["Integral Viewport", "Vacuum Component", "Hydrogen Compressor"]
+  let titleStatus = 0
+
+  function changeTitle() {
+    let randomNumber = Math.random()
+    let ments = TITLE[Math.floor(randomNumber * 2)]
+    return ments
+  }
+
   return (
     <Layout>
       <Container imgPath={HERO}>
-        <h1>Total solution for integral viewport</h1>
+        <h1>
+          Total solution for [ <black>{TITLE[0]}</black> ]
+        </h1>
         <Icon src={DOWNARROW} alt="arrow" />
       </Container>
     </Layout>

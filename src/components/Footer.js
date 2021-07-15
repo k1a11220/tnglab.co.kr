@@ -57,7 +57,7 @@ const Footer = () => {
             Yeongtong-gu, Suwon-si, Gyeonggi-do
           </p>
           <p>Tel +82 10-4485-1018 | Cooperation / Investment sales@tnglab.co.kr</p>
-          <p>COPYRIGHT Ⓒ 2020 TNG CO., LTD. ALL RIGHTS RESERVED.</p>
+          <p>COPYRIGHT Ⓒ {new Date().getFullYear()} TNG CO., LTD. ALL RIGHTS RESERVED.</p>
         </InfoWrapper>
       </Wrapper>
     </Container>
