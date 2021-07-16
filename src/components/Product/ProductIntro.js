@@ -45,7 +45,7 @@ const ButtonWrapper = styled.span`
     margin: 12px;
     font-size: var(--font-sm);
     background-color: #f5f5f7;
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 769px) {
       margin: 8px;
       font-size: var(--font-md);
       padding: 16px 24px 16px 24px;
@@ -61,7 +61,7 @@ const ButtonWrapper = styled.span`
     background-color: ;
   }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 769px) {
     display: grid;
     width: 100%;
   }
@@ -70,24 +70,22 @@ const ButtonWrapper = styled.span`
 const HeroImg = styled.div`
   background: url(${(props) => props.imgPath});
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 700px;
   border-radius: 15px;
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 769px) {
     height: 50vw;
   }
 `
 
-const ProductIntro = () => {
+const ProductIntro = ({ title, subTitle, contents }) => {
   return (
     <IntroContainer>
       <IntroWrapper>
-        <h1>TNG's Smart Viewport</h1>
-        <h2>JK-Series</h2>
-        <p>
-          Meet the ultimate iPhone. With the fastest smartphone chip. 5G speed. A Pro camera system
-          that’s killer in low light. A LiDAR Scanner for more realistic AR. And two great sizes to
-          choose from — including our largest display ever. Let’s see what this thing can do.
-        </p>
+        <h1>{subTitle}</h1>
+        <h2>{title}</h2>
+        <p>{contents}</p>
         <ButtonWrapper>
           <a href="mailto:sales@tnglab.co.kr">Estimate</a>
           <a>Catalogue</a>

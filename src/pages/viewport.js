@@ -1,29 +1,44 @@
 import React from "react"
+import styled from "styled-components"
 import Layout from "../layout/layout"
 import ProductLayout from "../layout/productLayout"
 
-const ViewportPage = () => {
-  const vpLinks = [
-    {
-      link: "/viewport/jk-series",
-      name: "JK-Series",
-      icon: "",
-    },
-    {
-      link: "/viewport/jkr-series",
-      name: "JKR-Series",
-      icon: "",
-    },
-    {
-      link: "/viewport/nys-series",
-      name: "NYS-Series",
-      icon: "",
-    },
-  ]
+const Container = styled.div`
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
+const CategoryGrid = styled.div`
+  width: var(--width);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 380px;
+  grid-gap: var(--gap);
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+`
+
+const CategoryWrapper = styled.div`
+  background-color: #515151;
+  border-radius: 15px;
+
+  &:first-of-type {
+    grid-column: 1 / span 2;
+  }
+`
+
+const ViewportPage = () => {
   return (
     <Layout>
-      <ProductLayout links={vpLinks}></ProductLayout>
+      <Container>
+        <CategoryGrid>
+          <CategoryWrapper></CategoryWrapper>
+          <CategoryWrapper></CategoryWrapper>
+          <CategoryWrapper></CategoryWrapper>
+        </CategoryGrid>
+      </Container>
     </Layout>
   )
 }

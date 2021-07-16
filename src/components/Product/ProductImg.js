@@ -32,25 +32,22 @@ const ProductImgGrid = styled.div`
 
 const ProductImgItem = styled.div`
   background-color: #1d1d1f;
+  background: url(${(props) => props.imgPath});
   border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 `
 
-const ProductImgItem__Long = styled(ProductImgItem)`
-  grid-area: 1 / 2 span;
-`
-
-const ProductImg = () => {
+const ProductImg = ({ Images }) => {
   return (
     <ProductImgContainer>
       <ProductImgWrapper>
         <h1>Feature</h1>
         <ProductImgGrid>
-          <ProductImgItem></ProductImgItem>
-          <ProductImgItem></ProductImgItem>
-          <ProductImgItem></ProductImgItem>
-          <ProductImgItem></ProductImgItem>
-          <ProductImgItem></ProductImgItem>
-          <ProductImgItem></ProductImgItem>
+          {Images.map(({ imgPath }) => (
+            <ProductImgItem imgPath={imgPath}></ProductImgItem>
+          ))}
         </ProductImgGrid>
       </ProductImgWrapper>
     </ProductImgContainer>

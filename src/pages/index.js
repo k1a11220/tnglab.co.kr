@@ -102,15 +102,6 @@ const InfoWrapper = styled.div`
 `
 // markup
 const IndexPage = () => {
-  const TITLE = ["Integral Viewport", "Vacuum Component", "Hydrogen Compressor"]
-  let titleStatus = 0
-
-  function changeTitle() {
-    let randomNumber = Math.random()
-    let ments = TITLE[Math.floor(randomNumber * 2)]
-    return ments
-  }
-
   return (
     <Layout>
       <HEROContainer imgPath={HERO}>

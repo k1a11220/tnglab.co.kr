@@ -55,66 +55,19 @@ const AdvantageItem = styled.div`
   }
 `
 
-const AdvantageImg = styled.div`
-  display: grid;
-  padding-left: 120px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: var(--gap);
-  @media screen and (max-width: 1200px) {
-    height: 100vw;
-    padding: 0;
-  }
-`
-
-const AdvantageImgContent = styled.div`
-  background-color: white;
-  border-radius: 15px;
-`
-
-const Advantage = () => {
+const Advantage = ({ contents }) => {
   return (
     <AdvantageContainer>
       <AdvantageWrapper>
         <div>
           <h1>Advantage</h1>
           <AdvantageGrid>
-            <AdvantageItem>
-              <p>Cost reduction</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Reduction of assembly time</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Shortening of Part Cleaning time</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Excellent quality through quality verification.</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Can be used for LL-Chamber.</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Application of ISO-K flange standard is limited.</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Rectangular Viewport is available.</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>3D step is provided with estimate.</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
-            <AdvantageItem>
-              <p>Simplify BOM through Total Assy provision.</p>
-              <img src={CHECK} alt="Green Check" />
-            </AdvantageItem>
+            {contents.map(({ title }) => (
+              <AdvantageItem>
+                <p>{title}</p>
+                <img src={CHECK} alt="Green Check" />
+              </AdvantageItem>
+            ))}
           </AdvantageGrid>
         </div>
       </AdvantageWrapper>
