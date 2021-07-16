@@ -24,8 +24,8 @@ const ProductNav = ({ links }) => {
   return (
     <Container>
       <ItemWrapper>
-        {links.map(({ link, name, icon }) => (
-          <ProductNavItem link={link} name={name} icon={icon} />
+        {links.map(({ link, name, icon, key }) => (
+          <ProductNavItem link={link} name={name} icon={icon} key={key} />
         ))}
       </ItemWrapper>
     </Container>

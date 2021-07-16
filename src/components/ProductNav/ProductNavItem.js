@@ -9,11 +9,12 @@ const Container = styled.li`
     flex-direction: column;
   }
   margin: 0 30px 0 30px;
+  text-align: center;
 `
 
-const Wrapper = styled.a`
-  display: block;
-`
+// const Wrapper = styled.a`
+//   display: block;
+// `
 
 const Icon = styled.img`
   align-self: center;
