@@ -96,7 +96,7 @@ const RefContainer = styled.div`
   align-items: center;
   padding: 80px 0 80px 0;
   & img {
-    width: 80%;
+    width: var(--width);
     margin: 40px;
   }
 `
@@ -159,15 +159,6 @@ const ViewportPage = () => {
             </RefWrapper>
             <img src={PartnerLogo} alt="parter logo" />
           </RefContainer>
-          <CategoryGridWrapper>
-            <CategoryGrid>
-              <CategoryWrapper>
-                <h3>JK-Series</h3>
-              </CategoryWrapper>
-              <CategoryWrapper></CategoryWrapper>
-              <CategoryWrapper></CategoryWrapper>
-            </CategoryGrid>
-          </CategoryGridWrapper>
         </Container>
       </ProductLayout>
     </Layout>
