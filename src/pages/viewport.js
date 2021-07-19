@@ -3,21 +3,51 @@ import styled from "styled-components"
 import Layout from "../layout/layout"
 import ProductLayout from "../layout/productLayout"
 
+import PartnerLogo from "../images/partner-logo-3.png"
+import ViewportFamily from "../images/viewports/OutlineBlurr-2.png"
+
+const vpLinks = [
+  {
+    link: "/viewport/jk-series",
+    name: "JK-Series",
+    icon: "",
+    key: 1,
+  },
+  {
+    link: "/viewport/jkr-series",
+    name: "JKR-Series",
+    icon: "",
+    key: 2,
+  },
+  {
+    link: "/viewport/nys-series",
+    name: "NYS-Series",
+    icon: "",
+    key: 3,
+  },
+]
+
 const Container = styled.div`
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `
 
+const CategoryGridWrapper = styled.div`
+  width: 100%;
+  /* background-color: black; */
+`
+
 const CategoryGrid = styled.div`
+  margin: 0 auto;
   width: var(--width);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 380px;
   grid-gap: var(--gap);
-  margin-top: var(--gap);
-  margin-bottom: var(--gap);
+  padding: 0 0 80px 0;
 `
 
 const CategoryWrapper = styled.div`
@@ -29,16 +59,117 @@ const CategoryWrapper = styled.div`
   }
 `
 
+const IntroContainer = styled.div`
+  width: 100%;
+  padding: 80px 0 80px 0;
+  background-color: #e8e8e8;
+`
+
+const IntroWrapper = styled.div`
+  width: var(--width);
+  text-align: center;
+  margin: 0 auto;
+  & h1 {
+    font-size: var(--font-lg);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  & h3 {
+    font-size: var(--font-md);
+    font-weight: 400;
+  }
+
+  & img {
+    width: var(--width);
+  }
+
+  & li {
+    list-style: none;
+  }
+`
+
+const RefContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 80px 0;
+  & img {
+    width: 80%;
+    margin: 40px;
+  }
+`
+
+const RefWrapper = styled.div`
+  width: var(--width);
+  margin: 0 auto;
+  text-align: center;
+  & h1 {
+    font-size: var(--font-lg);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+
+  & h3 {
+    font-size: var(--font-md);
+    font-weight: 400;
+  }
+
+  & img {
+    width: var(--width);
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  & b {
+    font-weight: 500;
+    color: var(--color-gray);
+  }
+`
+
 const ViewportPage = () => {
   return (
     <Layout>
-      <Container>
-        <CategoryGrid>
-          <CategoryWrapper></CategoryWrapper>
-          <CategoryWrapper></CategoryWrapper>
-          <CategoryWrapper></CategoryWrapper>
-        </CategoryGrid>
-      </Container>
+      <ProductLayout links={vpLinks}>
+        <Container>
+          <IntroContainer>
+            <IntroWrapper>
+              <li>
+                <h1>Integral Viewport, It is more safely and convenient</h1>
+                <h3>
+                  When designing a vacuum chamber, applying an integrated viewport will reduce cost,
+                  reduce design time, and shorten assembly time.
+                </h3>
+                <img src={ViewportFamily} alt="ViewportFamily" />
+              </li>
+            </IntroWrapper>
+          </IntroContainer>
+
+          <RefContainer>
+            <RefWrapper>
+              <h1>Used by companies and institutions around the world</h1>
+              <h3>
+                Applied Materials, Korea Atomic Energy Research Institute, T-Robotics, ASM, H&iruja,
+                INVENIA, Sunic System, etc. <br /> Meet the Integral Viewport used by various
+                companies and organizations today.
+              </h3>
+            </RefWrapper>
+            <img src={PartnerLogo} alt="parter logo" />
+          </RefContainer>
+          <CategoryGridWrapper>
+            <CategoryGrid>
+              <CategoryWrapper>
+                <h3>JK-Series</h3>
+              </CategoryWrapper>
+              <CategoryWrapper></CategoryWrapper>
+              <CategoryWrapper></CategoryWrapper>
+            </CategoryGrid>
+          </CategoryGridWrapper>
+        </Container>
+      </ProductLayout>
     </Layout>
   )
 }

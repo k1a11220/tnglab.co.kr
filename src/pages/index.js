@@ -86,7 +86,7 @@ const InfoWrapper = styled.div`
     font-size: var(--font-sm);
     margin-top: 18px;
     font-weight: 500;
-    color: #a2a1a1;
+    color: var(--color-gray);
   }
 
   & img {

@@ -5,7 +5,7 @@ import ProductNavItem from "./ProductNavItem"
 
 const Container = styled.div`
   height: 120px;
-  background-color: #f5f5f7;
+  background-color: var(--color-semiGray);
 `
 
 const ItemWrapper = styled.div`

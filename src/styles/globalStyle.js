@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
 
     --color-black: #0a0a0a;
     --color-white: #ffffff;
+    --color-gray: #a2a1a1;
+    --color-semiGray: #f5f5f7;
+    --color-lightGray: #f2f2f2;
+    --color-blue: #086bce;
 
     --gap: 32px;
 }
