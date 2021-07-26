@@ -183,7 +183,7 @@ const Navigation = () => {
                 <Link to="/viewport">Viewport</Link>
               </Item>
               <Item>
-                <Link to="/vacuum">Vacuum Component</Link>
+                <Link to="/vacuum/tls">Vacuum Component</Link>
               </Item>
               <Item>
                 <Link to="/hydro">Hydrogen Compressor</Link>

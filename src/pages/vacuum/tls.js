@@ -1,6 +1,7 @@
 import React from "react"
-import Layout from "../layout/layout"
-import ProductLayout from "../layout/productLayout"
+import Layout from "../../layout/layout"
+import ProductLayout from "../../layout/productLayout"
+
 const vcLinks = [
   {
     link: "/vacuum/tls",
@@ -8,15 +9,15 @@ const vcLinks = [
     key: 1,
   },
 ]
-// markup
-const VacuumPage = () => {
+
+const TLSPage = () => {
   return (
     <Layout>
       <ProductLayout links={vcLinks}>
-        <h1>Vacuum Page</h1>
+        <h1>TLS Page</h1>
       </ProductLayout>
     </Layout>
   )
 }
 
-export default VacuumPage
+export default TLSPage

@@ -15,16 +15,19 @@ const IntroContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: var(--width);
-  height: calc(100vh - 54px - 304px);
+  background-color: var(--color-semiGray);
+  height: calc(100vh - 54px);
 
   & h1 {
     font-size: var(--font-xl);
+
     & b {
       color: #00d959;
     }
+
     margin-bottom: 24px;
   }
+
   & h3 {
     font-size: var(--font-md);
     font-weight: 500;
@@ -36,23 +39,49 @@ const IntroContainer = styled.div`
   }
 `
 
-const LocationContainer = styled.div``
+const IntroWrapper = styled.div`
+  width: 100%;
+  width: var(--width);
+`
+
+const LocationContainer = styled.div`
+  & h2 {
+    font-size: var(--font-lg);
+    font-weight: var(--font-weight-semi-bold);
+    padding: 40px;
+  }
+`
+
+const CertificationContainer = styled.div`
+  background-color: #1d1d1f;
+  height: 800px;
+
+  & h2 {
+    color: white;
+  }
+`
+
 // markup
 const AboutPage = () => {
   return (
     <Layout>
       <Container>
         <IntroContainer>
-          <h1>
-            Our <b>green</b> journey
-          </h1>
-          <h3>TNG's carbon neutral project will make better future.</h3>
-          <img src={GreenGraph} alt="GreenGraph" />
+          <IntroWrapper>
+            <h1>
+              Our <b>green</b> journey
+            </h1>
+            <h3>TNG's carbon neutral project will make better future.</h3>
+            {/* <img src={GreenGraph} alt="GreenGraph" /> */}
+          </IntroWrapper>
         </IntroContainer>
         <LocationContainer>
-          <h1>Where we are</h1>
+          <h2>Where we are</h2>
           <TNGMap />
         </LocationContainer>
+        <CertificationContainer>
+          <h2>Certifications</h2>
+        </CertificationContainer>
       </Container>
     </Layout>
   )

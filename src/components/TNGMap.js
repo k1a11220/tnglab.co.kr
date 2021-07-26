@@ -1,19 +1,24 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 
-const MapContainer = styled.div``
+const MapContainer = styled.div`
+  & a {
+    font-weight: 500;
+    color: var(--color-black);
+    position: relative;
+    top: 16px;
+  }
+`
 
 const MapWrapper = styled.div`
   margin: 0 auto;
-  width: var(--width);
-  height: 800px;
+  width: var(--text-width);
+  height: 500px;
 `
 
 const APP_KEY = "c8ca36fd7c4de7d09c6506859f45833b"
 
 const TNGMap = () => {
-  const [map, setMap] = useState(null)
-
   const createMap = () => {
     const script = document.createElement("script")
     script.async = true
@@ -44,9 +49,15 @@ const TNGMap = () => {
   // marker 생성 + 표시
 
   return (
-    <MapContainer className="App">
-      <MapWrapper id="Mymap"></MapWrapper>
-    </MapContainer>
+    <>
+      <MapContainer className="App">
+        <MapWrapper id="Mymap"></MapWrapper>
+        <a href="http://kko.to/7qNBKtj4M" target="_blank">
+          Gyeonggi University Industrial Cooperation Group 303, 154-42, Gwanggyosan-ro,
+          Yeongtong-gu, Suwon-si, Gyeonggi-do
+        </a>
+      </MapContainer>
+    </>
   )
 }
 
