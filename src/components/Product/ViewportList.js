@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 
@@ -67,36 +68,42 @@ const ViewportList = () => {
     <BuyContainer>
       <BuyWrapper>
         <h1>More Integral Viewport Series</h1>
-        <BuyContentWrapper>
-          <div>
-            <h3>JK-Series</h3>
-            <p>Circle type Integral Viewport</p>
-            <p>Supports ISO Flange Standard (NW)</p>
-          </div>
-          <div>
-            <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
-          </div>
-        </BuyContentWrapper>
-        <BuyContentWrapper>
-          <div>
-            <h3>JKR-Series</h3>
-            <p>Circle type Integral Viewport</p>
-            <p>Supports ISO Flange Standard (NW)</p>
-          </div>
-          <div>
-            <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
-          </div>
-        </BuyContentWrapper>
-        <BuyContentWrapper>
-          <div>
-            <h3>NYS-Series</h3>
-            <p>Circle type Integral Viewport</p>
-            <p>Supports ISO Flange Standard (NW)</p>
-          </div>
-          <div>
-            <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
-          </div>
-        </BuyContentWrapper>
+        <Link to="/viewport/jk-series">
+          <BuyContentWrapper>
+            <div>
+              <h3>JK-Series</h3>
+              <p>Circle type Integral Viewport</p>
+              <p>Supports ISO Flange Standard (NW)</p>
+            </div>
+            <div>
+              <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+            </div>
+          </BuyContentWrapper>
+        </Link>
+        <Link to="/viewport/jkr-series">
+          <BuyContentWrapper>
+            <div>
+              <h3>JKR-Series</h3>
+              <p>Circle type Integral Viewport</p>
+              <p>Supports ISO Flange Standard (NW)</p>
+            </div>
+            <div>
+              <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+            </div>
+          </BuyContentWrapper>
+        </Link>
+        <Link to="/viewport/nys-series">
+          <BuyContentWrapper>
+            <div>
+              <h3>NYS-Series</h3>
+              <p>Circle type Integral Viewport</p>
+              <p>Supports ISO Flange Standard (NW)</p>
+            </div>
+            <div>
+              <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+            </div>
+          </BuyContentWrapper>
+        </Link>
       </BuyWrapper>
     </BuyContainer>
   )
