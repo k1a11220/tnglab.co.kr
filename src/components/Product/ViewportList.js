@@ -1,6 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import JK from "../../images/viewports/JK.png"
+import JKR from "../../images/viewports/JKR.png"
+import NYS from "../../images/viewports/NYS.png"
 
 const BuyContainer = styled.div`
   background-color: #f5f5f7;
@@ -31,7 +34,7 @@ const BuyContentWrapper = styled.div`
     flex-direction: column-reverse;
     text-align: center;
     padding-left: 0;
-    padding: 20px;
+    padding: 50px;
     justify-content: space-around;
   }
 
@@ -53,12 +56,11 @@ const BuyContentWrapper = styled.div`
   }
 
   & img {
-    margin-right: 52px;
-    height: 140px;
+    height: 200px;
 
     @media screen and (max-width: 769px) {
       margin-right: 0;
-      height: 100px;
+      height: 140px;
     }
   }
 `
@@ -76,7 +78,7 @@ const ViewportList = () => {
               <p>Supports ISO Flange Standard (NW)</p>
             </div>
             <div>
-              <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+              <img src={JK} />
             </div>
           </BuyContentWrapper>
         </Link>
@@ -88,7 +90,7 @@ const ViewportList = () => {
               <p>Supports ISO Flange Standard (NW)</p>
             </div>
             <div>
-              <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+              <img src={JKR} />
             </div>
           </BuyContentWrapper>
         </Link>
@@ -100,7 +102,7 @@ const ViewportList = () => {
               <p>Supports ISO Flange Standard (NW)</p>
             </div>
             <div>
-              <img src="http://tnglab.co.kr/static/media/viewport-2.2443ffd7.png" />
+              <img src={NYS} />
             </div>
           </BuyContentWrapper>
         </Link>
