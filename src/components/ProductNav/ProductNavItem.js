@@ -8,6 +8,10 @@ const Container = styled.li`
     display: flex;
     flex-direction: column;
   }
+
+  & span {
+    font-weight: 500;
+  }
   margin: 0 30px 0 30px;
   text-align: center;
 `
@@ -21,14 +25,11 @@ const Icon = styled.img`
   width: 50px;
 `
 
-const ProductNavItem = ({ link, name }) => {
+const ProductNavItem = ({ link, name, icon }) => {
   return (
     <Container>
       <Link to={link}>
-        <Icon
-          src="https://www.apple.com/v/watch/home/am/images/overview/icons/watch_nav_accessories__bu98chbn5rea_large.svg"
-          alt="icon"
-        />
+        <Icon src={icon} alt="icon" />
         <span>{name}</span>
       </Link>
     </Container>

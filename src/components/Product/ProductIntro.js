@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import HERO from "../../images/hero.png"
-
 const IntroContainer = styled.div`
   width: var(--width);
   margin: 0 auto;
@@ -79,7 +77,7 @@ const HeroImg = styled.div`
   }
 `
 
-const ProductIntro = ({ title, subTitle, contents }) => {
+const ProductIntro = ({ title, subTitle, contents, hero }) => {
   return (
     <IntroContainer>
       <IntroWrapper>
@@ -92,7 +90,7 @@ const ProductIntro = ({ title, subTitle, contents }) => {
           <a>3D Step</a>
         </ButtonWrapper>
       </IntroWrapper>
-      <HeroImg imgPath={HERO} />
+      <HeroImg imgPath={hero} />
     </IntroContainer>
   )
 }

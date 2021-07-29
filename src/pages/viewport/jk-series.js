@@ -8,26 +8,39 @@ import Advantage from "../../components/Product/Advantage"
 import ProductImg from "../../components/Product/ProductImg"
 
 import CHECK from "../../images/greenCheckmark.svg"
-import HERO from "../../images/hero.png"
+import HERO from "../../images/viewports/JK.png"
+
+import JKIcon from "../../images/viewports/JK.svg"
+import JKRIcon from "../../images/viewports/JKR.svg"
+import NYSIcon from "../../images/viewports/NYS.svg"
+
+import Img_1 from "../../images/viewports/jk/viewport-1.jpg"
+import Img_2 from "../../images/viewports/jk/viewport-2.jpg"
+import Img_3 from "../../images/viewports/jk/viewport-3.jpg"
+import Img_4 from "../../images/viewports/jk/viewport-4.jpg"
+import Img_5 from "../../images/viewports/jk/viewport-5.jpg"
+import Img_6 from "../../images/viewports/jk/viewport-6.jpg"
+import Img_7 from "../../images/viewports/jk/viewport-7.jpg"
+import Img_8 from "../../images/viewports/jk/viewport-8.jpg"
 
 const JKPage = () => {
   const vpLinks = [
     {
       link: "/viewport/jk-series",
-      name: "JK-Series",
-      icon: "",
+      name: "JK Series",
+      icon: JKIcon,
       key: 1,
     },
     {
       link: "/viewport/jkr-series",
-      name: "JKR-Series",
-      icon: "",
+      name: "JKR Series",
+      icon: JKRIcon,
       key: 2,
     },
     {
       link: "/viewport/nys-series",
-      name: "NYS-Series",
-      icon: "",
+      name: "NYS Series",
+      icon: NYSIcon,
       key: 3,
     },
   ]
@@ -64,16 +77,28 @@ const JKPage = () => {
 
   const Images = [
     {
-      imgPath: HERO,
+      imgPath: Img_1,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_2,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_3,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_4,
+    },
+    {
+      imgPath: Img_5,
+    },
+    {
+      imgPath: Img_6,
+    },
+    {
+      imgPath: Img_7,
+    },
+    {
+      imgPath: Img_8,
     },
   ]
 
@@ -84,6 +109,7 @@ const JKPage = () => {
           title="JK-Series"
           subTitle="TNG's Smart Viewport"
           contents="Meet the ultimate iPhone. With the fastest smartphone chip. 5G speed. A Pro camera system that’s killer in low light. A LiDAR Scanner for more realistic AR. And two great sizes to choose from — including our largest display ever. Let’s see what this thing can do."
+          hero={HERO}
         />
         <Advantage contents={Advantages} />
         <ProductImg Images={Images} />
