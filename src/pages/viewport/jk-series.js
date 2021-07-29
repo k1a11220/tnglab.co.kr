@@ -7,7 +7,6 @@ import ProductIntro from "../../components/Product/ProductIntro"
 import Advantage from "../../components/Product/Advantage"
 import ProductImg from "../../components/Product/ProductImg"
 
-import CHECK from "../../images/greenCheckmark.svg"
 import HERO from "../../images/viewports/JK.png"
 
 import JKIcon from "../../images/viewports/JK.svg"
@@ -22,6 +21,9 @@ import Img_5 from "../../images/viewports/jk/viewport-5.jpg"
 import Img_6 from "../../images/viewports/jk/viewport-6.jpg"
 import Img_7 from "../../images/viewports/jk/viewport-7.jpg"
 import Img_8 from "../../images/viewports/jk/viewport-8.jpg"
+
+import Catalouge from "../../images/viewports/jk/viewport-8.jpg"
+import Step from "../../images/viewports/jk/viewport-8.jpg"
 
 const JKPage = () => {
   const vpLinks = [
@@ -110,6 +112,8 @@ const JKPage = () => {
           subTitle="TNG's Smart Viewport"
           contents="Meet the ultimate iPhone. With the fastest smartphone chip. 5G speed. A Pro camera system that’s killer in low light. A LiDAR Scanner for more realistic AR. And two great sizes to choose from — including our largest display ever. Let’s see what this thing can do."
           hero={HERO}
+          catalogue={Catalouge}
+          step={Step}
         />
         <Advantage contents={Advantages} />
         <ProductImg Images={Images} />

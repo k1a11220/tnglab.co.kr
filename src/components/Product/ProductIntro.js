@@ -87,7 +87,7 @@ const HeroImg = styled.div`
   }
 `
 
-const ProductIntro = ({ title, subTitle, contents, hero }) => {
+const ProductIntro = ({ title, subTitle, contents, hero, catalogue, step }) => {
   return (
     <IntroContainer>
       <IntroWrapper>
@@ -96,8 +96,12 @@ const ProductIntro = ({ title, subTitle, contents, hero }) => {
         <p>{contents}</p>
         <ButtonWrapper>
           <a href="mailto:sales@tnglab.co.kr">Estimate</a>
-          <a>Catalogue</a>
-          <a>3D Step</a>
+          <a href={catalogue} download>
+            Catalogue
+          </a>
+          <a href={step} download>
+            3D Step
+          </a>
         </ButtonWrapper>
       </IntroWrapper>
       <HeroImg imgPath={hero} />
