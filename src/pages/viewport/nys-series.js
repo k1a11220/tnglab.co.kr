@@ -14,6 +14,17 @@ import JKIcon from "../../images/viewports/JK.svg"
 import JKRIcon from "../../images/viewports/JKR.svg"
 import NYSIcon from "../../images/viewports/NYS.svg"
 
+import Img_1 from "../../images/viewports/nys/viewport-1.jpg"
+import Img_2 from "../../images/viewports/nys/viewport-2.jpg"
+import Img_3 from "../../images/viewports/nys/viewport-3.jpg"
+import Img_4 from "../../images/viewports/nys/viewport-4.jpg"
+import Img_5 from "../../images/viewports/nys/viewport-5.jpg"
+import Img_6 from "../../images/viewports/nys/viewport-6.jpg"
+import Img_7 from "../../images/viewports/nys/viewport-7.jpg"
+import Img_8 from "../../images/viewports/nys/viewport-8.jpg"
+import Img_9 from "../../images/viewports/nys/viewport-9.jpg"
+import Img_10 from "../../images/viewports/nys/viewport-10.jpg"
+
 const NYSPage = () => {
   const vpLinks = [
     {
@@ -64,20 +75,41 @@ const NYSPage = () => {
     {
       title: "Simplify BOM through Total Assy provision.",
     },
+    {
+      title: "Controlled by servomotor",
+    },
   ]
 
   const Images = [
     {
-      imgPath: HERO,
+      imgPath: Img_1,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_2,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_3,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_4,
+    },
+    {
+      imgPath: Img_5,
+    },
+    {
+      imgPath: Img_6,
+    },
+    {
+      imgPath: Img_7,
+    },
+    {
+      imgPath: Img_8,
+    },
+    {
+      imgPath: Img_9,
+    },
+    {
+      imgPath: Img_10,
     },
   ]
 

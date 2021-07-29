@@ -30,6 +30,7 @@ const BuyContentWrapper = styled.div`
   padding-left: 52px;
   margin: 0;
   margin-bottom: var(--gap);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   @media screen and (max-width: 769px) {
     flex-direction: column-reverse;
     text-align: center;

@@ -6,23 +6,27 @@ import ProductLayout from "../layout/productLayout"
 import PartnerLogo from "../images/partner-logo-3.png"
 import ViewportFamily from "../images/viewports/OutlineBlurr-2.png"
 
+import JKIcon from "../images/viewports/JK.svg"
+import JKRIcon from "../images/viewports/JKR.svg"
+import NYSIcon from "../images/viewports/NYS.svg"
+
 const vpLinks = [
   {
     link: "/viewport/jk-series",
-    name: "JK-Series",
-    icon: "",
+    name: "JK Series",
+    icon: JKIcon,
     key: 1,
   },
   {
     link: "/viewport/jkr-series",
-    name: "JKR-Series",
-    icon: "",
+    name: "JKR Series",
+    icon: JKRIcon,
     key: 2,
   },
   {
     link: "/viewport/nys-series",
-    name: "NYS-Series",
-    icon: "",
+    name: "NYS Series",
+    icon: NYSIcon,
     key: 3,
   },
 ]

@@ -14,6 +14,13 @@ import JKIcon from "../../images/viewports/JK.svg"
 import JKRIcon from "../../images/viewports/JKR.svg"
 import NYSIcon from "../../images/viewports/NYS.svg"
 
+import Img_1 from "../../images/viewports/jkr/viewport-1.jpg"
+import Img_2 from "../../images/viewports/jkr/viewport-2.jpg"
+import Img_3 from "../../images/viewports/jkr/viewport-3.jpg"
+import Img_4 from "../../images/viewports/jkr/viewport-4.jpg"
+import Img_5 from "../../images/viewports/jkr/viewport-5.jpg"
+import Img_6 from "../../images/viewports/jkr/viewport-6.jpg"
+
 const JKRPage = () => {
   const vpLinks = [
     {
@@ -68,16 +75,22 @@ const JKRPage = () => {
 
   const Images = [
     {
-      imgPath: HERO,
+      imgPath: Img_1,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_2,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_3,
     },
     {
-      imgPath: HERO,
+      imgPath: Img_4,
+    },
+    {
+      imgPath: Img_5,
+    },
+    {
+      imgPath: Img_6,
     },
   ]
 

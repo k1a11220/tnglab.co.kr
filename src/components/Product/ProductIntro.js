@@ -35,14 +35,19 @@ const IntroWrapper = styled.div`
 
 const ButtonWrapper = styled.span`
   padding-top: 52px;
+
   & a {
     cursor: pointer;
     padding: 8px 24px 8px 24px;
-    border: none;
-    border-radius: 20px;
+    border: 2px solid #0275d8;
+    border-radius: 10px;
     margin: 12px;
     font-size: var(--font-sm);
-    background-color: #f5f5f7;
+    background-color: none;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    color: #0275d8;
+
     @media screen and (max-width: 769px) {
       margin: 8px;
       font-size: var(--font-md);
@@ -51,12 +56,17 @@ const ButtonWrapper = styled.span`
   }
 
   & a:first-of-type {
-    background-color: #0071e3;
+    background-color: #0275d8;
     color: #ffffff;
+
+    &:hover {
+      background-color: #339cf5;
+      border: 2px solid #339cf5;
+    }
   }
 
   & a:hover {
-    background-color: ;
+    background-color: #cbe5fb;
   }
 
   @media screen and (max-width: 769px) {

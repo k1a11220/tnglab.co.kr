@@ -37,6 +37,7 @@ const ProductImgItem = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 `
 
 const ProductImg = ({ Images }) => {
