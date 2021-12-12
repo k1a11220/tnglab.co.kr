@@ -24,5 +24,22 @@ module.exports = {
     ],
   },
 
-  plugins: ["gatsby-plugin-styled-components"],
-}
+  plugins: [
+    "gatsby-plugin-styled-components",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/images/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
+    },
+  ],
+};

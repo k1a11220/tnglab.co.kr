@@ -98,10 +98,10 @@ const ProductIntro = ({ title, subTitle, contents, hero, catalogue, step }) => {
         <p>{contents}</p>
         <ButtonWrapper>
           <a href="mailto:sales@tnglab.co.kr">Estimate</a>
-          <a href={catalogue} download>
+          <a href={catalogue} target="_blank" rel="noreferrer">
             Catalogue
           </a>
-          <a href={step} download>
+          <a href={step} target="_blank" rel="noreferrer">
             3D Step
           </a>
         </ButtonWrapper>

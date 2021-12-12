@@ -87,6 +87,8 @@ const JKRPage = () => {
           subTitle="TNG's New Vacuum Components"
           contents="Meet the ultimate iPhone. With the fastest smartphone chip. 5G speed. A Pro camera system that’s killer in low light. A LiDAR Scanner for more realistic AR. And two great sizes to choose from — including our largest display ever. Let’s see what this thing can do."
           hero={HERO}
+          catalogue="https://drive.google.com/file/d/1gwcfUgDmBSfFl16nZykFxTy1bJm3aA19/view?usp=sharing"
+          step="https://drive.google.com/file/d/1bTWzKVrzCQgSUT_CotktnhtVUCTOex5N/view?usp=sharing"
         />
         <Advantage contents={Advantages} />
         <ProductImg Images={Images} />
