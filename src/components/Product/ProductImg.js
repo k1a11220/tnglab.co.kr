@@ -1,20 +1,21 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const ProductImgContainer = styled.div`
   background-color: #ffffff;
   padding-bottom: 60px;
-`
+`;
 
 const ProductImgWrapper = styled.div`
   width: var(--width);
   margin: 0 auto;
+
   & h1 {
     padding: 136px 0 56px 0;
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--font-lg);
   }
-`
+`;
 
 const ProductImgGrid = styled.div`
   display: grid;
@@ -28,7 +29,7 @@ const ProductImgGrid = styled.div`
     grid-template-columns: 1fr;
     grid-auto-rows: 56vw;
   }
-`
+`;
 
 const ProductImgItem = styled.div`
   background-color: #1d1d1f;
@@ -38,7 +39,7 @@ const ProductImgItem = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-`
+`;
 
 const ProductImg = ({ Images }) => {
   return (
@@ -52,7 +53,7 @@ const ProductImg = ({ Images }) => {
         </ProductImgGrid>
       </ProductImgWrapper>
     </ProductImgContainer>
-  )
-}
+  );
+};
 
-export default ProductImg
+export default ProductImg;

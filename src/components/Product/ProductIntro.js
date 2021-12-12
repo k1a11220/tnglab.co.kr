@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 const IntroContainer = styled.div`
   width: var(--width);
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-`
+`;
 
 const IntroWrapper = styled.div`
   margin: 0 auto;
@@ -20,6 +20,7 @@ const IntroWrapper = styled.div`
   & h1 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #717989;
   }
 
   & h2 {
@@ -30,8 +31,9 @@ const IntroWrapper = styled.div`
   & p {
     font-size: var(--font-sm);
     font-weight: 500;
+    color: #717989;
   }
-`
+`;
 
 const ButtonWrapper = styled.span`
   padding-top: 52px;
@@ -73,7 +75,7 @@ const ButtonWrapper = styled.span`
     display: grid;
     width: 100%;
   }
-`
+`;
 
 const HeroImg = styled.div`
   background: url(${(props) => props.imgPath});
@@ -85,13 +87,13 @@ const HeroImg = styled.div`
   @media screen and (max-width: 769px) {
     height: 50vw;
   }
-`
+`;
 
 const ProductIntro = ({ title, subTitle, contents, hero, catalogue, step }) => {
   return (
     <IntroContainer>
       <IntroWrapper>
-        <h1>{subTitle}</h1>
+        {/* <h1>{subTitle}</h1> */}
         <h2>{title}</h2>
         <p>{contents}</p>
         <ButtonWrapper>
@@ -106,7 +108,7 @@ const ProductIntro = ({ title, subTitle, contents, hero, catalogue, step }) => {
       </IntroWrapper>
       <HeroImg imgPath={hero} />
     </IntroContainer>
-  )
-}
+  );
+};
 
-export default ProductIntro
+export default ProductIntro;

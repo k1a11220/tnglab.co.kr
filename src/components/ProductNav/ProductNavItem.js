@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
+import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.li`
   list-style: none;
@@ -10,11 +10,12 @@ const Container = styled.li`
   }
 
   & span {
+    font-size: var(--font-xs);
     font-weight: 500;
   }
   margin: 0 30px 0 30px;
   text-align: center;
-`
+`;
 
 // const Wrapper = styled.a`
 //   display: block;
@@ -23,7 +24,7 @@ const Container = styled.li`
 const Icon = styled.img`
   align-self: center;
   width: 50px;
-`
+`;
 
 const ProductNavItem = ({ link, name, icon }) => {
   return (
@@ -33,7 +34,7 @@ const ProductNavItem = ({ link, name, icon }) => {
         <span>{name}</span>
       </Link>
     </Container>
-  )
-}
+  );
+};
 
-export default ProductNavItem
+export default ProductNavItem;

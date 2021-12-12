@@ -1,24 +1,25 @@
-import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
-import JK from "../../images/viewports/JK.png"
-import JKR from "../../images/viewports/JKR.png"
-import NYS from "../../images/viewports/NYS.png"
+import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
+import JK from "../../images/viewports/JK.png";
+import JKR from "../../images/viewports/JKR.png";
+import NYS from "../../images/viewports/NYS.png";
 
 const BuyContainer = styled.div`
   background-color: #f5f5f7;
   padding-bottom: 60px;
+
   & h1 {
     padding: 136px 0 40px 0;
-    font-weight: 500;
+    font-weight: 600;
     font-size: var(--font-lg);
   }
-`
+`;
 
 const BuyWrapper = styled.div`
   width: var(--width);
   margin: 0 auto;
-`
+`;
 
 const BuyContentWrapper = styled.div`
   height: 240px;
@@ -64,7 +65,7 @@ const BuyContentWrapper = styled.div`
       height: 140px;
     }
   }
-`
+`;
 
 const ViewportList = () => {
   return (
@@ -109,7 +110,7 @@ const ViewportList = () => {
         </Link>
       </BuyWrapper>
     </BuyContainer>
-  )
-}
+  );
+};
 
-export default ViewportList
+export default ViewportList;
