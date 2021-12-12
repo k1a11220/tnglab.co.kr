@@ -80,7 +80,7 @@ const ViewportList = () => {
               <p>Supports ISO Flange Standard (NW)</p>
             </div>
             <div>
-              <img src={JK} />
+              <img src={JK} alt="product" />
             </div>
           </BuyContentWrapper>
         </Link>
@@ -92,7 +92,7 @@ const ViewportList = () => {
               <p>Supports ISO Flange Standard (NW)</p>
             </div>
             <div>
-              <img src={JKR} />
+              <img src={JKR} alt="product" />
             </div>
           </BuyContentWrapper>
         </Link>
@@ -104,7 +104,7 @@ const ViewportList = () => {
               <p>Supports ISO Flange Standard (NW)</p>
             </div>
             <div>
-              <img src={NYS} />
+              <img src={NYS} alt="product" />
             </div>
           </BuyContentWrapper>
         </Link>

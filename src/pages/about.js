@@ -129,12 +129,12 @@ const AboutPage = () => {
         <CertificationContainer>
           <h2>Certifications</h2>
           <ScrollContainer>
-            <img src={ISO_KR} />
-            <img src={ISO_EN} />
-            <img src={ECO_KR} />
-            <img src={ECO_EN} />
-            <img src={VENTURE_KR} />
-            <img src={VENTURE_EN} />
+            <img src={ISO_KR} alt="certifications" />
+            <img src={ISO_EN} alt="certifications" />
+            <img src={ECO_KR} alt="certifications" />
+            <img src={ECO_EN} alt="certifications" />
+            <img src={VENTURE_KR} alt="certifications" />
+            <img src={VENTURE_EN} alt="certifications" />
           </ScrollContainer>
         </CertificationContainer>
       </Container>

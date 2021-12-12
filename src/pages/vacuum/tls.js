@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../../layout/layout";
 import ProductLayout from "../../layout/productLayout";
 
-import ViewportList from "../../components/Product/ViewportList";
 import ProductIntro from "../../components/Product/ProductIntro";
 import Advantage from "../../components/Product/Advantage";
 import ProductImg from "../../components/Product/ProductImg";

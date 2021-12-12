@@ -1,25 +1,25 @@
-import React from "react"
-import Layout from "../../layout/layout"
-import ProductLayout from "../../layout/productLayout"
+import React from "react";
+import Layout from "../../layout/layout";
+import ProductLayout from "../../layout/productLayout";
 
-import ViewportList from "../../components/Product/ViewportList"
-import ProductIntro from "../../components/Product/ProductIntro"
-import Advantage from "../../components/Product/Advantage"
-import ProductImg from "../../components/Product/ProductImg"
+import ViewportList from "../../components/Product/ViewportList";
+import ProductIntro from "../../components/Product/ProductIntro";
+import Advantage from "../../components/Product/Advantage";
+import ProductImg from "../../components/Product/ProductImg";
 
-import CHECK from "../../images/greenCheckmark.svg"
-import HERO from "../../images/viewports/JKR.png"
+// import CHECK from "../../images/greenCheckmark.svg"
+import HERO from "../../images/viewports/JKR.png";
 
-import JKIcon from "../../images/viewports/JK.svg"
-import JKRIcon from "../../images/viewports/JKR.svg"
-import NYSIcon from "../../images/viewports/NYS.svg"
+import JKIcon from "../../images/viewports/JK.svg";
+import JKRIcon from "../../images/viewports/JKR.svg";
+import NYSIcon from "../../images/viewports/NYS.svg";
 
-import Img_1 from "../../images/viewports/jkr/viewport-1.jpg"
-import Img_2 from "../../images/viewports/jkr/viewport-2.jpg"
-import Img_3 from "../../images/viewports/jkr/viewport-3.jpg"
-import Img_4 from "../../images/viewports/jkr/viewport-4.jpg"
-import Img_5 from "../../images/viewports/jkr/viewport-5.jpg"
-import Img_6 from "../../images/viewports/jkr/viewport-6.jpg"
+import Img_1 from "../../images/viewports/jkr/viewport-1.jpg";
+import Img_2 from "../../images/viewports/jkr/viewport-2.jpg";
+import Img_3 from "../../images/viewports/jkr/viewport-3.jpg";
+import Img_4 from "../../images/viewports/jkr/viewport-4.jpg";
+import Img_5 from "../../images/viewports/jkr/viewport-5.jpg";
+import Img_6 from "../../images/viewports/jkr/viewport-6.jpg";
 
 const JKRPage = () => {
   const vpLinks = [
@@ -41,7 +41,7 @@ const JKRPage = () => {
       icon: NYSIcon,
       key: 3,
     },
-  ]
+  ];
 
   const Advantages = [
     {
@@ -71,7 +71,7 @@ const JKRPage = () => {
     {
       title: "Simplify BOM through Total Assy provision.",
     },
-  ]
+  ];
 
   const Images = [
     {
@@ -92,7 +92,7 @@ const JKRPage = () => {
     {
       imgPath: Img_6,
     },
-  ]
+  ];
 
   return (
     <Layout>
@@ -108,7 +108,7 @@ const JKRPage = () => {
         <ViewportList />
       </ProductLayout>
     </Layout>
-  )
-}
+  );
+};
 
-export default JKRPage
+export default JKRPage;

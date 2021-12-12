@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../layout/layout";
 import styled from "styled-components";
 
-import DOWNARROW from "../images/downArrow.svg";
+// import DOWNARROW from "../images/downArrow.svg";
 import HERO from "../images/hero_2.png";
 import Bulb from "../images/lightbulb.svg";
 import Earth from "../images/Earth.svg";

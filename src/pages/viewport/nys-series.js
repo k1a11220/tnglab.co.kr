@@ -1,29 +1,29 @@
-import React from "react"
-import Layout from "../../layout/layout"
-import ProductLayout from "../../layout/productLayout"
+import React from "react";
+import Layout from "../../layout/layout";
+import ProductLayout from "../../layout/productLayout";
 
-import ViewportList from "../../components/Product/ViewportList"
-import ProductIntro from "../../components/Product/ProductIntro"
-import Advantage from "../../components/Product/Advantage"
-import ProductImg from "../../components/Product/ProductImg"
+import ViewportList from "../../components/Product/ViewportList";
+import ProductIntro from "../../components/Product/ProductIntro";
+import Advantage from "../../components/Product/Advantage";
+import ProductImg from "../../components/Product/ProductImg";
 
-import CHECK from "../../images/greenCheckmark.svg"
-import HERO from "../../images/viewports/NYS.png"
+// import CHECK from "../../images/greenCheckmark.svg"
+import HERO from "../../images/viewports/NYS.png";
 
-import JKIcon from "../../images/viewports/JK.svg"
-import JKRIcon from "../../images/viewports/JKR.svg"
-import NYSIcon from "../../images/viewports/NYS.svg"
+import JKIcon from "../../images/viewports/JK.svg";
+import JKRIcon from "../../images/viewports/JKR.svg";
+import NYSIcon from "../../images/viewports/NYS.svg";
 
-import Img_1 from "../../images/viewports/nys/viewport-1.jpg"
-import Img_2 from "../../images/viewports/nys/viewport-2.jpg"
-import Img_3 from "../../images/viewports/nys/viewport-3.jpg"
-import Img_4 from "../../images/viewports/nys/viewport-4.jpg"
-import Img_5 from "../../images/viewports/nys/viewport-5.jpg"
-import Img_6 from "../../images/viewports/nys/viewport-6.jpg"
-import Img_7 from "../../images/viewports/nys/viewport-7.jpg"
-import Img_8 from "../../images/viewports/nys/viewport-8.jpg"
-import Img_9 from "../../images/viewports/nys/viewport-9.jpg"
-import Img_10 from "../../images/viewports/nys/viewport-10.jpg"
+import Img_1 from "../../images/viewports/nys/viewport-1.jpg";
+import Img_2 from "../../images/viewports/nys/viewport-2.jpg";
+import Img_3 from "../../images/viewports/nys/viewport-3.jpg";
+import Img_4 from "../../images/viewports/nys/viewport-4.jpg";
+import Img_5 from "../../images/viewports/nys/viewport-5.jpg";
+import Img_6 from "../../images/viewports/nys/viewport-6.jpg";
+import Img_7 from "../../images/viewports/nys/viewport-7.jpg";
+import Img_8 from "../../images/viewports/nys/viewport-8.jpg";
+import Img_9 from "../../images/viewports/nys/viewport-9.jpg";
+import Img_10 from "../../images/viewports/nys/viewport-10.jpg";
 
 const NYSPage = () => {
   const vpLinks = [
@@ -45,7 +45,7 @@ const NYSPage = () => {
       icon: NYSIcon,
       key: 3,
     },
-  ]
+  ];
 
   const Advantages = [
     {
@@ -78,7 +78,7 @@ const NYSPage = () => {
     {
       title: "Controlled by servomotor",
     },
-  ]
+  ];
 
   const Images = [
     {
@@ -111,7 +111,7 @@ const NYSPage = () => {
     {
       imgPath: Img_10,
     },
-  ]
+  ];
 
   return (
     <Layout>
@@ -127,7 +127,7 @@ const NYSPage = () => {
         <ViewportList />
       </ProductLayout>
     </Layout>
-  )
-}
+  );
+};
 
-export default NYSPage
+export default NYSPage;

@@ -39,30 +39,6 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const CategoryGridWrapper = styled.div`
-  width: 100%;
-  /* background-color: black; */
-`;
-
-const CategoryGrid = styled.div`
-  margin: 0 auto;
-  width: var(--width);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 380px;
-  grid-gap: var(--gap);
-  padding: 0 0 80px 0;
-`;
-
-const CategoryWrapper = styled.div`
-  background-color: #515151;
-  border-radius: 15px;
-
-  &:first-of-type {
-    grid-column: 1 / span 2;
-  }
-`;
-
 const IntroContainer = styled.div`
   width: 100%;
   padding: 80px 0 80px 0;

@@ -58,7 +58,7 @@ const TNGMap = () => {
     <>
       <MapContainer className="App">
         <MapWrapper id="Mymap" />
-        <a href="http://kko.to/7qNBKtj4M" target="_blank">
+        <a href="http://kko.to/7qNBKtj4M" target="_blank" rel="noreferrer">
           Gyeonggi University Industrial Cooperation Group 303, 154-42,
           Gwanggyosan-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do
         </a>
