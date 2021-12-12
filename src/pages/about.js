@@ -1,13 +1,21 @@
-import React from "react"
-import Layout from "../layout/layout"
-import styled from "styled-components"
+import React from "react";
+import Layout from "../layout/layout";
+import styled from "styled-components";
 
-import GreenGraph from "../images/GreenGraph.svg"
-import TNGMap from "../components/TNGMap"
+import SantaTree from "../images/santaTree.png";
+import TNGMap from "../components/TNGMap";
+
+import ISO_KR from "../images/certifications/ISO_KR.png";
+import ISO_EN from "../images/certifications/ISO_EN.png";
+import ECO_KR from "../images/certifications/ECO_KR.png";
+import ECO_EN from "../images/certifications/ECO_EN.png";
+import VENTURE_KR from "../images/certifications/VENTURE_KR.png";
+import VENTURE_EN from "../images/certifications/VENTURE_EN.png";
+// import GreenGraph from "../images/GreenGraph.svg";
 
 const Container = styled.section`
   text-align: center;
-`
+`;
 
 const IntroContainer = styled.div`
   margin: 0 auto;
@@ -37,29 +45,65 @@ const IntroContainer = styled.div`
     width: var(--width);
     margin-top: 80px;
   }
-`
+`;
 
 const IntroWrapper = styled.div`
   width: 100%;
   width: var(--width);
-`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  & img {
+    @media screen and (max-width: 1200px) {
+      margin-top: 60px;
+      margin-left: 0;
+      max-width: 300px;
+    }
+    /* position: absolute; */
+    margin-left: 60px;
+    max-width: 400px;
+  }
+`;
 
 const LocationContainer = styled.div`
   & h2 {
     font-size: var(--font-lg);
-    font-weight: var(--font-weight-semi-bold);
-    padding: 40px;
+    font-weight: 600;
+    padding-top: 80px;
+    margin-bottom: 50px;
   }
-`
+`;
 
 const CertificationContainer = styled.div`
   background-color: #1d1d1f;
-  height: 800px;
 
   & h2 {
+    font-size: var(--font-lg);
+    font-weight: 600;
+    padding-top: 90px;
     color: white;
   }
-`
+`;
+
+const ScrollContainer = styled.div`
+  display: flex;
+  overflow: scroll;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  & img {
+    max-width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+`;
 
 // markup
 const AboutPage = () => {
@@ -68,11 +112,14 @@ const AboutPage = () => {
       <Container>
         <IntroContainer>
           <IntroWrapper>
-            <h1>
-              Our <b>green</b> journey
-            </h1>
-            <h3>TNG's carbon neutral project will make better future.</h3>
-            {/* <img src={GreenGraph} alt="GreenGraph" /> */}
+            <div>
+              <h1>
+                Our <b>green</b> journey
+              </h1>
+              <h3>TNG's carbon neutral project will make better future.</h3>
+            </div>
+
+            <img src={SantaTree} alt="SantaTree" />
           </IntroWrapper>
         </IntroContainer>
         <LocationContainer>
@@ -81,10 +128,18 @@ const AboutPage = () => {
         </LocationContainer>
         <CertificationContainer>
           <h2>Certifications</h2>
+          <ScrollContainer>
+            <img src={ISO_KR} />
+            <img src={ISO_EN} />
+            <img src={ECO_KR} />
+            <img src={ECO_EN} />
+            <img src={VENTURE_KR} />
+            <img src={VENTURE_EN} />
+          </ScrollContainer>
         </CertificationContainer>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
