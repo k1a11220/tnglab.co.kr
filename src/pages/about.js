@@ -74,7 +74,7 @@ const LocationContainer = styled.div`
   & h2 {
     font-size: var(--font-lg);
     font-weight: 600;
-    padding-top: 80px;
+    padding-top: 90px;
     margin-bottom: 50px;
   }
 `;
@@ -95,7 +95,7 @@ const ScrollContainer = styled.div`
   overflow: scroll;
   max-width: var(--width);
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
 
   & img {

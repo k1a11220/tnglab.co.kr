@@ -3,12 +3,12 @@ import Layout from "../layout/layout";
 import styled from "styled-components";
 
 import DOWNARROW from "../images/downArrow.svg";
-import HERO from "../images/hero.png";
+import HERO from "../images/hero_2.png";
 import Bulb from "../images/lightbulb.svg";
 import Earth from "../images/Earth.svg";
 
 const HEROContainer = styled.div`
-  height: calc(90vh - 54px);
+  height: calc(100vh - 54px);
   /* height: 710px; */
   background: url(${(props) => props.imgPath});
   background-size: cover;
@@ -18,19 +18,20 @@ const HEROContainer = styled.div`
   & div {
     display: flex;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+
     /* justify-content: space-between; */
     text-align: center;
   }
 
   & h1 {
     /* margin-top: calc((80vh - 54px) / 2.2); */
-    font-size: var(--font-lg);
+    margin-top: 120px;
+    font-size: var(--font-xl);
     font-weight: 700;
-    color: var(--color-white);
+    color: #0a0a0a;
   }
 
   & img {
@@ -106,11 +107,14 @@ const IndexPage = () => {
     <Layout>
       <HEROContainer imgPath={HERO}>
         <div>
-          <h1>Technology for Next Generation</h1>
-          <p>
+          <h1>
+            {/* We build <br /> */}
+            Technology for Next Generation
+          </h1>
+          {/* <p>
             We provide total solutions for Viewports, Hydrogen Compressor,
             Vacuum Componets
-          </p>
+          </p> */}
           {/* <Icon src={DOWNARROW} alt="arrow" /> */}
         </div>
       </HEROContainer>
