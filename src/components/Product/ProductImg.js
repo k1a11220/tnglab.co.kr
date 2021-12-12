@@ -47,8 +47,8 @@ const ProductImg = ({ Images }) => {
       <ProductImgWrapper>
         <h1>Feature</h1>
         <ProductImgGrid>
-          {Images.map(({ imgPath }) => (
-            <ProductImgItem imgPath={imgPath}></ProductImgItem>
+          {Images.map(({ imgPath }, index) => (
+            <ProductImgItem key={index} imgPath={imgPath}></ProductImgItem>
           ))}
         </ProductImgGrid>
       </ProductImgWrapper>

@@ -66,8 +66,8 @@ const Advantage = ({ contents }) => {
         <div>
           <h1>Advantage</h1>
           <AdvantageGrid>
-            {contents.map(({ title }) => (
-              <AdvantageItem>
+            {contents.map(({ title }, index) => (
+              <AdvantageItem key={index}>
                 <p>{title}</p>
                 <img src={CHECK} alt="Green Check" />
               </AdvantageItem>
