@@ -119,7 +119,7 @@ const NYSPage = () => {
         <ProductIntro
           title="NYS-Series"
           subTitle="TNG's Smart Viewport"
-          contents="Meet the ultimate iPhone. With the fastest smartphone chip. 5G speed. A Pro camera system that’s killer in low light. A LiDAR Scanner for more realistic AR. And two great sizes to choose from — including our largest display ever. Let’s see what this thing can do."
+          contents=" "
           hero={HERO}
           catalogue="https://drive.google.com/file/d/1SX9EFrSa35oQq9-6Xmw6i0XEobEhvavN/view?usp=sharing"
           step="https://drive.google.com/file/d/1aqztTeQll5n_Jo2os_5QFFyLSpBbpARL/view?usp=sharing"
