@@ -1,15 +1,15 @@
 //Common
 import Button from "https://framer.com/m/Button-3Edd.js@0fxKXUxpvNEyNW2IlypX";
 import Footer from "https://framer.com/m/Footer-oX9M.js@ipjPlC15ChjVJcdoT9Ch";
-import Hero from "https://framer.com/m/Hero-CDnN.js@0jAKH9G8XJXVVPPUQJ6N";
-import Navbar from "https://framer.com/m/Navbar-s7Jo.js@LGyLc6CiUC6ph7hhwn2W";
+import Hero from "https://framer.com/m/Hero-CDnN.js@aHVR0Vi5deO8Maj6RWfl";
+import Navbar from "https://framer.com/m/Navbar-s7Jo.js@3RPv3Jdr0ABqYdo3t5AA";
 import ReadySection from "https://framer.com/m/readySection-0FB8.js@Ko0u7SMBASIw92yl0L9Y";
 
 //About Page
 import AboutMapSection from "https://framer.com/m/About-MapSection-I2Mb.js@UvNGC5FAmCmSdvj3cd3t";
 
 //Home Page
-import HomeIntroSection from "https://framer.com/m/Home-IntroSection-Fwg6.js@f2RERFyTXUUY5umIKitl";
+import HomeIntroSection from "https://framer.com/m/Home-IntroSection-Fwg6.js@2FVZlX3RuHJaO0YJsgZD";
 
 //Material Page
 import MaterialTableSection from "https://framer.com/m/Material-TableSection-QhYV.js@0TIKvYpkiDRjlRFYo3Vv";
