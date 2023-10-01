@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Container>
-        <Components.Hero variants="about" className="width_100" />
+        <Components.Hero variant="about" className="width_100" />
         <Components.AboutMapSection className="width_100" />
       </Container>
     </>

@@ -1,7 +1,7 @@
 //Common
 import Button from "https://framer.com/m/Button-3Edd.js@0fxKXUxpvNEyNW2IlypX";
 import Footer from "https://framer.com/m/Footer-oX9M.js@ipjPlC15ChjVJcdoT9Ch";
-import Hero from "https://framer.com/m/Hero-CDnN.js@aHVR0Vi5deO8Maj6RWfl";
+import Hero from "https://framer.com/m/Hero-CDnN.js@JhIpXxxOJkHsIeXF5aAe";
 import Navbar from "https://framer.com/m/Navbar-s7Jo.js@3RPv3Jdr0ABqYdo3t5AA";
 import ReadySection from "https://framer.com/m/readySection-0FB8.js@Ko0u7SMBASIw92yl0L9Y";
 
@@ -9,10 +9,10 @@ import ReadySection from "https://framer.com/m/readySection-0FB8.js@Ko0u7SMBASIw
 import AboutMapSection from "https://framer.com/m/About-MapSection-I2Mb.js@UvNGC5FAmCmSdvj3cd3t";
 
 //Home Page
-import HomeIntroSection from "https://framer.com/m/Home-IntroSection-Fwg6.js@2FVZlX3RuHJaO0YJsgZD";
+import HomeIntroSection from "https://framer.com/m/Home-IntroSection-Fwg6.js@zGZi3i0MA3HCJG4kUnc8";
 
 //Material Page
-import MaterialTableSection from "https://framer.com/m/Material-TableSection-QhYV.js@UQSuLc9LM1pYLA0YF8TY";
+import MaterialTableSection from "https://framer.com/m/Material-TableSection-QhYV.js@0TIKvYpkiDRjlRFYo3Vv";
 
 //Viewport Page
 import ViewportIndexSection from "https://framer.com/m/Viewport-indexSection-OoWY.js@kcncLJGDIUgBeGvntYAc";
