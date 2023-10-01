@@ -12,7 +12,7 @@ import AboutMapSection from "https://framer.com/m/About-MapSection-I2Mb.js@UvNGC
 import HomeIntroSection from "https://framer.com/m/Home-IntroSection-Fwg6.js@2FVZlX3RuHJaO0YJsgZD";
 
 //Material Page
-import MaterialTableSection from "https://framer.com/m/Material-TableSection-QhYV.js@0TIKvYpkiDRjlRFYo3Vv";
+import MaterialTableSection from "https://framer.com/m/Material-TableSection-QhYV.js@UQSuLc9LM1pYLA0YF8TY";
 
 //Viewport Page
 import ViewportIndexSection from "https://framer.com/m/Viewport-indexSection-OoWY.js@kcncLJGDIUgBeGvntYAc";
