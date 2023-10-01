@@ -6,8 +6,11 @@ export default function Material() {
   return (
     <>
       <Head>
-        <title>Material</title>
-        <meta name="description" content="Modules" />
+        <title>TNG | 특수금속</title>
+        <meta
+          name="description"
+          content="티엔지에서는 아래와 같은 특수금속을 취급합니다. 하스텔로이 인코넬 니켈 크롬합금 기타 니켈"
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Container>

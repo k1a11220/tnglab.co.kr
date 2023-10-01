@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Container } from "../components/Container";
 import { Components } from "../components/Framer/Components";
-import { useRouter } from "next/router";
 
 export default function Hydro() {
   return (

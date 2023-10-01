@@ -6,8 +6,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Framer</title>
-        <meta name="description" content="Modules" />
+        <title>TNG | Home</title>
+        <meta
+          name="description"
+          content="TNG stands for Technology for Next Generation. TNG focuses on creating innovations for future generations. TNG's advancements will aid in the sustainable growth and flourishing of humanity."
+        />
         <link rel="icon" href="/favicon.png" />
       </Head>
 

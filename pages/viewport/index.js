@@ -8,8 +8,8 @@ export default function Viewport() {
   return (
     <>
       <Head>
-        <title>Framer</title>
-        <meta name="description" content="Modules" />
+        <title>TNG | Viewport Series</title>
+        <meta name="description" content="Integral Viewport Series" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Container>
