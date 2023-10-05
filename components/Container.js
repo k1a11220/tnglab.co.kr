@@ -1,8 +1,6 @@
-import Head from "next/head";
 import { Components } from "./Framer/Components";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Script from "next/script";
 
 export function Container({ children }) {
   const router = useRouter();
@@ -38,20 +36,6 @@ export function Container({ children }) {
 
   return (
     <>
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11361899346">
-          </script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-          
-            gtag('config', 'AW-11361899346');
-          </script>
-        `}
-      </Script>
       <div className="container">
         <Components.Navbar
           home={() => router.push("/")}
